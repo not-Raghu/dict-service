@@ -1,11 +1,6 @@
 import sys
-import argparse
-
 import ctypes
 import ctypes.util
-
-
-
 
 #to load objc
 def find_and_load(name):
