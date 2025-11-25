@@ -67,6 +67,9 @@ def abort(text):
     sys.exit(1)
 
 def main():
+    if(len(sys.argv)<1):
+        print("No argument provided. Usage: python3 main.py <word>")
+        return
     word = sys.argv[1]
     definition = lookup_word(word)
     if definition is None:
